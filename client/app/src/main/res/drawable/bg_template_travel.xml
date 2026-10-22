@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="90"
+                android:endColor="#FFFFF3E0"
+                android:startColor="#FFFFFAF1" />
+            <corners android:radius="24dp" />
+        </shape>
+    </item>
+
+    <item>
+        <bitmap
+            android:antialias="true"
+            android:gravity="fill"
+            android:src="@drawable/travel_background" />
+    </item>
+
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="24dp" />
+            <stroke
+                android:width="3dp"
+                android:color="#807C5B2A" />
+        </shape>
+    </item>
+</layer-list>
+

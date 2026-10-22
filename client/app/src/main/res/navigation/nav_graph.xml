@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/HomeFragment">
+
+    <fragment
+        android:id="@+id/HomeFragment"
+        android:name="com.example.csci_asp.HomeFragment"
+        android:label="@string/home_title"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_home_to_scrapbook"
+            app:destination="@id/ScrapbookFragment" />
+
+        <action
+            android:id="@+id/action_home_to_movies"
+            app:destination="@id/MoviesFragment" />
+        <action
+            android:id="@+id/action_home_to_places"
+            app:destination="@id/PlacesFragment" />
+
+        <action
+            android:id="@+id/action_home_to_photoDetail"
+            app:destination="@id/photoDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ScrapbookFragment"
+        android:name="com.example.csci_asp.scrapbook.ScrapbookFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_scrapbook" />
+
+    <fragment
+        android:id="@+id/MoviesFragment"
+        android:name="com.example.csci_asp.movies.MoviesFragment"
+        android:label="@string/movies_heading"
+        tools:layout="@layout/fragment_movies" />
+    <fragment
+        android:id="@+id/PlacesFragment"
+        android:name="com.example.csci_asp.places.PlacesFragment"
+        android:label="Places and Routes"
+        tools:layout="@layout/fragment_places" />
+    <fragment
+        android:id="@+id/photoDetailFragment"
+        android:name="com.example.csci_asp.photos.PhotoDetailFragment"
+        android:label="@string/photo_detail_title"
+        tools:layout="@layout/fragment_photo_detail" />
+</navigation>

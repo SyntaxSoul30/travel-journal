@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/HomeFragment"
+        android:icon="@drawable/ic_photo_library"
+        android:title="@string/home_title" />
+    <item
+        android:id="@+id/ScrapbookFragment"
+        android:icon="@drawable/ic_scrapbook"
+        android:title="@string/home_scrapbook_card_title" />
+    <item
+        android:id="@+id/MoviesFragment"
+        android:icon="@drawable/ic_movies"
+        android:title="@string/home_movies_card_title" />
+    <item
+        android:id="@+id/PlacesFragment"
+        android:icon="@drawable/ic_places"
+        android:title="@string/places_and_routes" />
+</menu>
+
